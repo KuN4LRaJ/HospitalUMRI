@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="opdbooking.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPD Booking</title>
+    <style>
+      .form-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .form-column {
+        flex: 1;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>OPD Booking</h1>
+    <div class="form-container">
+      <div class="form-column">
+        <label for="code">Code:</label><br />
+        <input type="text" id="code" /><br />
+
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" /><br />
+
+        <label for="so">SO/DO/WO/HO:</label><br />
+        <input type="text" id="so" /><br />
+
+        <label for="address">Address:</label><br />
+        <textarea id="address" rows="3"></textarea><br />
+        <input type="text" id="address" /><br />
+
+        <label for="ps">P.S:</label><br />
+        <input type="text" id="ps" /><br />
+
+        <label for="phone">Phone:</label><br />
+        <input type="tel" id="phone" /><br />
+
+        <label for="nationality">Nationality:</label><br />
+        <input type="text" id="nationality" /><br />
+
+        <label for="occupation">Occupation:</label><br />
+        <input type="text" id="occupation" /><br />
+
+        <label for="age">Age:</label><br />
+        <input type="number" id="age" /><br />
+
+        <label for="sex">Sex:</label><br />
+        <select id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option></select
+        ><br />
+
+        <label for="mediclaim">Mediclaim (yes/no):</label><br />
+        <select id="mediclaim">
+          <option value="yes">Yes</option>
+          <option value="no">No</option></select
+        ><br />
+
+        <label for="daycase">Day Case (yes/no):</label><br />
+        <select id="daycase">
+          <option value="yes">Yes</option>
+          <option value="no">No</option></select
+        ><br />
+
+        <label for="cashCredit">Cash/Credit:</label><br />
+        <input type="text" id="cashCredit" /><br />
+
+        <label for="tpaName">TPA Name:</label><br />
+        <input type="text" id="tpaName" /><br />
+
+        <label for="reimbursement">Reimbursement (yes/no):</label><br />
+        <select id="reimbursement">
+          <option value="yes">Yes</option>
+          <option value="no">No</option></select
+        ><br />
+
+        <label for="admittedBy">Admitted by:</label><br />
+        <input type="text" id="admittedBy" /><br />
+
+        <label for="relation">Relation:</label><br />
+        <input type="text" id="relation" /><br />
+
+        <label for="date">Date:</label><br />
+        <input type="date" id="date" /><br />
+
+        <label for="time">Time:</label><br />
+        <input type="time" id="time" /><br />
+
+        <label for="admittedByOff">Admitted by (off):</label><br />
+        <input type="text" id="admittedByOff" /><br />
+      </div>
+      <div class="form-column">
+        <label for="dialysis">Select for DIALYSIS PATIENT:</label><br />
+        <select id="dialysis">
+          <option value="yes">Yes</option>
+          <option value="no">No</option></select
+        ><br />
+
+       
+
+        
+
+        <label for="status">Status (corporate/not referred):</label><br />
+        <select id="status">
+          <option value="direct">Direct</option>
+          <option value="referred">Referred</option>
+          <option value="corporate">Corporate</option>
+          <option value="notReferred">Not Referred</option></select
+        ><br />
+
+        <label for="stream">Stream:</label><br />
+        <select id="stream">
+          <option value="stream1">Stream 1</option>
+          <option value="stream2">Stream 2</option></select
+        ><br />
+
+        <label for="refBy">Ref. By:</label><br />
+        <input type="text" id="refBy" /><br />
+
+        <label for="underDoctor">Under Doctor:</label><br />
+        <select id="underDoctor">
+          <option value="doctor1">Doctor 1</option>
+          <option value="doctor2">Doctor 2</option></select
+        ><br />
+
+        <label for="bedType">Bed type:</label><br />
+        <select id="bedType">
+          <option value="single">Single</option>
+          <option value="double">Double</option></select
+        ><br />
+
+        <label for="bedNo">Bed No.:</label><br />
+        <input type="text" id="bedNo" /><br />
+
+        <label for="diagnosis">Diagnosis:</label><br />
+        <input type="text" id="diagnosis" /><br />
+
+        <label for="bedPreference">Bed Preference:</label><br />
+        <input type="text" id="bedPreference" /><br />
+
+        <label for="food">Food (Veg / non veg):</label><br />
+        <select id="food">
+          <option value="veg">Veg</option>
+          <option value="nonVeg">Non Veg</option></select
+        ><br />
+
+        <label for="address2">Address:</label><br />
+        <textarea id="address" rows="3"></textarea><br />
+        <input type="text" id="address2" /><br />
+
+        <label for="phone2">Phone:</label><br />
+        <input type="tel" id="phone2" /><br />
+
+        <label for="dialysis2">Dialysis (yes/no):</label><br />
+        <select id="dialysis2">
+          <option value="yes">Yes</option>
+          <option value="no">No</option></select
+        ><br />
+      </div>
+    </div>
+
+    <!-- Add buttons -->
+    <div class="button-container">
+      <button>Add Doctor</button>
+      <button>Save</button>
+      <button>Cancel</button>
+      <button>Done</button>
+      <button>Print</button>
+      <button>Payment</button>
+    </div>
+  </body>
+</html>
