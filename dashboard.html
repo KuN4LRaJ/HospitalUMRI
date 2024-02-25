@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <h1>Welcome, Admin</h1>
+    <!-- <h2>Admin DashBoard</h2> -->
+    <section>
+        <div class="card">
+            <div class="summary-card">
+                <img src="https://nextgen.ehospital.nic.in/dashboard/assets/ipd.png" alt="change it!">
+                <p>Total IPD Transactions: <span id="ipd-txn">18,789</span> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="summary-card">
+                <img src="https://nextgen.ehospital.nic.in/dashboard/assets/md_clinic_icon.png" alt="change it!">
+                <p>Total Prescriptions Generated: <span id="ipd-txn">13,254</span> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="summary-card">
+                <img src="https://nextgen.ehospital.nic.in/dashboard/assets/store.png" alt="change it!">
+                <p>Total Pharmacy Transactions : <span id="ipd-txn">7,789</span> </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="summary-card">
+                <img src="https://nextgen.ehospital.nic.in/dashboard/assets/md_billing_icon.png" alt="change it!">
+                <p>Total Bills Generated: <span id="ipd-txn">6,789</span> </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="topcard card">
+            <p class="numeric-values">352</p>
+            <p>Today's OPD registration</p>
+            <div class="chart">
+                <canvas class="chart chart-1"></canvas>
+            </div>
+        </div>
+        <div class="topcard card">
+            <p class="numeric-values">2,509,508</p>
+            <p>Total OPD registration</p>
+            <div class="chart">
+                <canvas class="chart chart-2"></canvas>
+            </div>
+        </div>
+        <div class="topcard card">
+            <p class="numeric-values">302</p>
+            <p>Today's Bed registrations</p>
+            <div class="chart">
+                <canvas class="chart chart-3"></canvas>
+            </div>
+        </div>
+        <div class="topcard card">
+            <p class="numeric-values">7,09,508</p>
+            <p>Total Patients dealt</p>
+            <div class="chart">
+                <canvas class="chart chart-4"></canvas>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="secondcard card">
+            <div class="chart" style="width: max(45svw,300px); height: max(50svw,200px);">
+                <canvas></canvas>
+            </div>
+        </div>
+        <div class="secondcard card">
+            <div class="chart" style="width: max(45svw,300px); height: max(50svw,200px);">
+                <canvas></canvas>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
