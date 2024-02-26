@@ -1,24 +1,15 @@
-name: Run SQL
+name: Run SQL File
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
-  run-sql:
+  run_sql:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Run SQL
-        run: |
-          # Install the SQL Server command-line tools
-          sudo apt-get install -y mssql-tools
-
-          # Connect to the SQL Server database
-          sqlcmd -S localhost -U SA -P YourPassword
-
-          # Run the SQL query
-          SELECT * FROM SCRIPTDATAuma
+    - name: Run SQL script
+      run: |
+        sqlcmd -S servername -d database_name -U username -P password -i ${{ github.workspace }}/SCRIPTDATAuma.sql
