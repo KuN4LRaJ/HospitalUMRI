@@ -1,15 +1,18 @@
-name: Run SQL File
+name: Run SQL Script
 
 on: [push]
 
 jobs:
-  run_sql:
+  run_sql_script:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set up SQL Server tools
+      uses: actions/setup-msbuild
+
     - name: Run SQL script
       run: |
-        sqlcmd -S servername -d database_name -U username -P password -i ${{ github.workspace }}/SCRIPTDATAuma.sql
+        sqlcmd -S LAPTOP-UBHBRE86\MSSQLSERVER02 -d uma -U LAPTOP-UBHBRE86\kunal -i HospitalUMRI/main/SCRIPTDATAuma.sql
