@@ -21,4 +21,4 @@ jobs:
           sqlcmd -S localhost -U SA -P YourPassword
 
           # Run the SQL query
-          SELECT * FROM MyTable
+          SELECT * FROM SCRIPTDATAuma
