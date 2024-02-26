@@ -1,0 +1,24 @@
+name: Run SQL
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-sql:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run SQL
+        run: |
+          # Install the SQL Server command-line tools
+          sudo apt-get install -y mssql-tools
+
+          # Connect to the SQL Server database
+          sqlcmd -S localhost -U SA -P YourPassword
+
+          # Run the SQL query
+          SELECT * FROM MyTable
