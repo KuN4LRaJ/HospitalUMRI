@@ -15,4 +15,4 @@ jobs:
 
     - name: Run SQL script
       run: |
-        sqlcmd -S LAPTOP-UBHBRE86\MSSQLSERVER02 -d uma -U LAPTOP-UBHBRE86\kunal -i SCRIPTDATAuma.sql
+        sqlcmd -S LAPTOP-UBHBRE86\MSSQLSERVER02 -d UMA -U LAPTOP-UBHBRE86\kunal -i SCRIPTDATAuma.sql
